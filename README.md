@@ -1,20 +1,370 @@
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+# 🧠 User Modeling Review Agent
+
+### AI-Powered Personalized Review & Rating Generation System
+
+Generate human-like reviews and realistic ratings using behavioral AI, contextual reasoning, and Nigerian-style localization.
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?style=for-the-badge&logo=fastapi)
+![React](https://img.shields.io/badge/React-Frontend-61dafb?style=for-the-badge&logo=react)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker)
+![AI](https://img.shields.io/badge/LLM-Powered-purple?style=for-the-badge)
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+# 📌 Overview
 
-View your app in AI Studio: https://ai.studio/apps/57b5f735-8b56-4230-909b-df96df44bf50
+User Modeling Review Agent is an intelligent AI system designed to simulate realistic human product reviews and ratings with high behavioral fidelity.
 
-## Run Locally
+Unlike traditional review generators, this system understands:
 
-**Prerequisites:**  Node.js
+- ⭐ Rating behavior
+- 🧠 User preferences
+- ✍️ Writing style
+- 😊 Sentiment patterns
+- 🇳🇬 Nigerian communication style
+- 📦 Product context
 
+The system takes a **user persona** and **product metadata** as input and generates:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+✅ Personalized review text  
+✅ Realistic star ratings  
+✅ Context-aware opinions  
+✅ Human-like writing behavior  
+
+---
+
+# 🚀 Key Features
+
+## 🧠 Personalized User Modeling
+
+Learns behavioral patterns such as:
+
+- Rating strictness
+- Review length
+- Tone and writing style
+- Positive/negative sentiment bias
+- Product preferences
+- Frequent complaints
+
+---
+
+## ✍️ Human-Like Review Generation
+
+Generates reviews that:
+
+- Feel natural and authentic
+- Match historical user behavior
+- Adapt to product context
+- Maintain writing consistency
+
+---
+
+## ⭐ Rating Prediction Engine
+
+Predicts realistic ratings using:
+
+- Behavioral analysis
+- Product understanding
+- Hybrid scoring architecture
+- Prompt-conditioned reasoning
+
+---
+
+## 🇳🇬 Nigerian Localization
+
+Supports localized communication styles:
+
+| Level | Description |
+|---|---|
+| None | Neutral English |
+| Light | Occasional Nigerian expressions |
+| Medium | Informal Nigerian English |
+| Strong | Nigerian pidgin dominant |
+
+### Example
+
+> “Battery dey okay sha, but camera no too sharp for night pictures.”
+
+---
+
+## 🐳 Containerized Deployment
+
+Built for reproducibility using Docker.
+
+Supports:
+- API deployment
+- Cloud deployment
+- Local development
+- Scalable architecture
+
+---
+
+# 🏗️ System Architecture
+
+```text
+User History → Feature Extraction → User Modeling
+                                      ↓
+                         Product Understanding
+                                      ↓
+                            Prompt Builder
+                                      ↓
+                        Large Language Model
+                                      ↓
+                Rating + Personalized Review
+```
+
+---
+
+# ⚙️ Tech Stack
+
+## Backend
+- Python
+- FastAPI
+
+## Frontend
+- React / Next.js
+
+## AI & NLP
+- Large Language Models (LLMs)
+- Prompt Engineering
+- Sentiment Analysis
+- Behavioral Modeling
+
+## Deployment
+- Docker
+- Vercel
+- Render
+
+---
+
+# 📂 Project Structure
+
+```text
+user-modeling-review-agent/
+│
+├── backend/
+│   ├── api/
+│   ├── services/
+│   ├── prompts/
+│   └── models/
+│
+├── frontend/
+│
+├── data/
+│
+├── docs/
+│   └── solution_paper.pdf
+│
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🧪 Evaluation Metrics
+
+| Metric | Purpose |
+|---|---|
+| RMSE | Rating prediction accuracy |
+| ROUGE | Text similarity evaluation |
+| BERTScore | Semantic quality |
+| Human Evaluation | Behavioral fidelity |
+
+---
+
+# 🔥 Sample API Request
+
+## Endpoint
+
+```http
+POST /generate-review
+```
+
+---
+
+## Request
+
+```json
+{
+  "user_profile": {
+    "avg_rating": 3.2,
+    "tone": "informal",
+    "preferences": ["battery", "price"],
+    "dislikes": ["lagging"]
+  },
+  "product": {
+    "name": "Infinix Note 12",
+    "category": "smartphone",
+    "features": ["5000mAh battery", "6GB RAM"]
+  },
+  "style_level": "medium"
+}
+```
+
+---
+
+## Response
+
+```json
+{
+  "rating": 4,
+  "review": "Phone dey okay well. Battery last and the screen clear. Camera no too sharp but for this price e worth am."
+}
+```
+
+---
+
+# ⚡ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/yourusername/user-modeling-review-agent.git
+cd user-modeling-review-agent
+```
+
+---
+
+## Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+---
+
+## Activate Environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# ▶️ Run the Backend
+
+```bash
+uvicorn app.main:app --reload
+```
+
+API will run on:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# 🐳 Docker Deployment
+
+## Build Image
+
+```bash
+docker build -t review-agent .
+```
+
+---
+
+## Run Container
+
+```bash
+docker run -p 8000:8000 review-agent
+```
+
+---
+
+# 📈 Experiments Conducted
+
+- Generic prompting baseline
+- Personalized prompting
+- Nigerian localization testing
+- Hybrid rating prediction
+- Behavioral conditioning
+- Ablation studies
+
+---
+
+# 📊 Key Findings
+
+✅ User history significantly improves realism  
+✅ Behavioral prompting increases fidelity  
+✅ Localization improves relatability  
+✅ Hybrid rating prediction reduces RMSE  
+
+---
+
+# 🔮 Future Improvements
+
+Planned future enhancements:
+
+- Fine-tuned personalized models
+- Long-term memory agents
+- Multimodal review generation
+- Reinforcement learning
+- Voice & image understanding
+
+---
+
+# 📄 Solution Paper
+
+Detailed methodology, experiments, and findings are available in:
+
+```text
+docs/solution_paper.pdf
+```
+
+---
+
+# 🤝 Contributions
+
+Contributions, suggestions, and improvements are welcome.
+
+Feel free to fork the repository and submit pull requests.
+
+---
+
+# 📜 License
+
+This project is intended for educational and research purposes.
+
+---
+
+# 👨‍💻 Author
+
+## Suleiman Yahaya
+
+AI / Web3 / Frontend Developer  
+Focused on AI-driven intelligent systems, decentralized applications, and behavioral AI.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project interesting, consider giving it a star!
+
+</div>
