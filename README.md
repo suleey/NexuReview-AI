@@ -140,13 +140,14 @@ User History → Feature Extraction → User Modeling
 - Docker
 - Vercel
 - Render
+- Netlify
 
 ---
 
 # 📂 Project Structure
 
 ```text
-user-modeling-review-agent/
+nexureview-ai/
 │
 ├── backend/
 │   ├── api/
