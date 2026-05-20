@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🧠 User Modeling Review Agent
+# 🧠 NexuReview AI
 
 ### AI-Powered Personalized Review & Rating Generation System
 
@@ -19,7 +19,7 @@ Generate human-like reviews and realistic ratings using behavioral AI, contextua
 
 # 📌 Overview
 
-User Modeling Review Agent is an intelligent AI system designed to simulate realistic human product reviews and ratings with high behavioral fidelity.
+NexuRview AI is an intelligent AI system designed to simulate realistic human product reviews and ratings with high behavioral fidelity.
 
 Unlike traditional review generators, this system understands:
 
@@ -228,8 +228,8 @@ POST /generate-review
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/user-modeling-review-agent.git
-cd user-modeling-review-agent
+git clone https://github.com/suleey/nexureview-ai.git
+cd nexureview-ai
 ```
 
 ---
